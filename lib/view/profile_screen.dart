@@ -34,12 +34,15 @@ class ProfileScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return SafeArea(
       child: Scaffold(
+        backgroundColor:  Color(0xFFB7E0FF), // Cor de fundo do Scaffold
         appBar: AppBar(
+          backgroundColor:  Color(0xFFB7E0FF), // Cor de fundo do AppBar
           title: const Text("Perfil de Usuário"),
           centerTitle: true,
           automaticallyImplyLeading: false, // Remove o botão de voltar padrão
         ),
-        body: Padding(
+        body: Container(
+          color: Color(0xFFB7E0FF), // Cor de fundo para o corpo inteiro
           padding: const EdgeInsets.symmetric(horizontal: 20.0),
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
@@ -49,21 +52,21 @@ class ProfileScreen extends StatelessWidget {
                 onPressed: () {
                   Navigator.of(context).pop(); // Voltar à tela anterior
                 },
-                 child: Container(
-  margin: EdgeInsets.only(
-      right: 1, bottom: 80), // Adjust the values as needed
-  child: Row(
-    mainAxisSize: MainAxisSize.min,
-    children: [
-      Icon(
-        Icons.chevron_left, 
-        color: Colors.black,
-        size: 40, 
-      ),
-      SizedBox(height: 100), 
-    ],
-  ),
-),
+                child: Container(
+                  margin: EdgeInsets.only(
+                      right: 1, bottom: 80), // Ajusta os valores conforme necessário
+                  child: Row(
+                    mainAxisSize: MainAxisSize.min,
+                    children: [
+                      Icon(
+                        Icons.chevron_left, 
+                        color: Colors.black,
+                        size: 40, 
+                      ),
+                      SizedBox(height: 100), 
+                    ],
+                  ),
+                ),
                 style: ElevatedButton.styleFrom(
                   backgroundColor: Colors.transparent, // Fundo transparente
                   shadowColor: Colors.transparent, // Remove a sombra

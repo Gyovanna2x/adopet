@@ -38,8 +38,9 @@ class _PetsScreenState extends State<PetsScreen> {
   Widget build(BuildContext context) {
     return SafeArea(
       child: Scaffold(
-        backgroundColor:  Color(0xFFB7E0FF),
+        backgroundColor: Color(0xFFB7E0FF), // Cor de fundo do Scaffold
         appBar: AppBar(
+          backgroundColor: Color(0xFFB7E0FF), // Cor de fundo do AppBar
           title: const Text("Pets"),
           centerTitle: true,
           automaticallyImplyLeading: false,
@@ -63,7 +64,7 @@ class _PetsScreenState extends State<PetsScreen> {
                           builder: (context) => AddPetScreen()));
                     },
                     style: ElevatedButton.styleFrom(
-                      backgroundColor:  Color(0xFFFFFBBE),
+                      backgroundColor: Color(0xFFFFFBBE),
                       padding: const EdgeInsets.symmetric(
                           horizontal: 20, vertical: 10),
                       shape: RoundedRectangleBorder(
@@ -72,7 +73,7 @@ class _PetsScreenState extends State<PetsScreen> {
                     ),
                     child: const Text(
                       "Adicionar para adoção",
-                      style: TextStyle(color:  Color(0xFF033A95)),
+                      style: TextStyle(color: Color(0xFF033A95)),
                     ),
                   ),
                   ElevatedButton(
@@ -81,7 +82,7 @@ class _PetsScreenState extends State<PetsScreen> {
                           builder: (context) => ProfileScreen()));
                     },
                     style: ElevatedButton.styleFrom(
-                      backgroundColor:  Color(0xFFFFFBBE),
+                      backgroundColor: Color(0xFFFFFBBE),
                       padding: const EdgeInsets.symmetric(
                           horizontal: 20, vertical: 10),
                       shape: RoundedRectangleBorder(
@@ -92,7 +93,7 @@ class _PetsScreenState extends State<PetsScreen> {
                       children: [
                         Text(
                           "Meus Pets",
-                          style: TextStyle(color:  Color(0xFF033A95)),
+                          style: TextStyle(color: Color(0xFF033A95)),
                         ),
                         SizedBox(width: 5),
                       ],
